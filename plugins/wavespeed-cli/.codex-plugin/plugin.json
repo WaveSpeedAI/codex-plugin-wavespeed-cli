@@ -1,0 +1,49 @@
+{
+  "name": "wavespeed-cli",
+  "version": "0.1.0",
+  "description": "Use the WaveSpeed CLI from Codex to discover and run AI image, video, audio, and 3D generation models.",
+  "author": {
+    "name": "WaveSpeedAI",
+    "email": "support@wavespeed.ai",
+    "url": "https://wavespeed.ai"
+  },
+  "homepage": "https://wavespeed.ai/cli",
+  "repository": "https://github.com/WaveSpeedAI/wavespeed-cli",
+  "license": "MIT",
+  "keywords": [
+    "wavespeed",
+    "ai-generation",
+    "cli",
+    "image-generation",
+    "video-generation"
+  ],
+  "skills": "./skills/",
+  "hooks": "./hooks.json",
+  "mcpServers": "./.mcp.json",
+  "apps": "./.app.json",
+  "interface": {
+    "displayName": "WaveSpeed CLI",
+    "shortDescription": "Run WaveSpeed media generation models from Codex.",
+    "longDescription": "Adds a Codex skill for using the WaveSpeed CLI to search the live model catalog, inspect model schemas, upload inputs, run image/video/audio/3D generation, and retrieve JSON outputs or downloaded files.",
+    "developerName": "WaveSpeedAI",
+    "category": "AI",
+    "capabilities": [
+      "Generate media",
+      "Run CLI commands",
+      "Upload files",
+      "Download outputs"
+    ],
+    "websiteURL": "https://wavespeed.ai",
+    "privacyPolicyURL": "https://wavespeed.ai/privacy",
+    "termsOfServiceURL": "https://wavespeed.ai/terms",
+    "defaultPrompt": [
+      "Generate an image with WaveSpeed.",
+      "Find a WaveSpeed video model.",
+      "Upload this asset and animate it."
+    ],
+    "brandColor": "#7C5CFF",
+    "composerIcon": "./assets/icon.png",
+    "logo": "./assets/logo.png",
+    "screenshots": []
+  }
+}
