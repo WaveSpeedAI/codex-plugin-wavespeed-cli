@@ -2,7 +2,7 @@
 
 Codex plugin marketplace package for the WaveSpeed CLI.
 
-The plugin teaches Codex how to use the `wavespeed` command line tool to search the live WaveSpeed model catalog, inspect model schemas, upload files, run AI media generation, and parse JSON outputs.
+The plugin teaches Codex how to use the `wavespeed` command line tool to search the live WaveSpeed model catalog, inspect model schemas, upload files, run AI image, video, audio, and 3D generation, and parse JSON outputs.
 
 ## Install
 
@@ -42,5 +42,7 @@ plugins/wavespeed-cli/skills/wavespeed-cli/SKILL.md
 ```bash
 wavespeed status
 wavespeed models "nano banana"
+wavespeed models --type text-to-video
+wavespeed models --type text-to-audio
 wavespeed run google/nano-banana-2/text-to-image -h
 ```

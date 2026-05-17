@@ -5,7 +5,7 @@ description: Generate, edit, animate, upscale, or transform AI media using the W
 
 # WaveSpeed CLI
 
-Use the `wavespeed` CLI to run WaveSpeed models. Every generation uses the same flow: search the live catalog, inspect the model schema, then run the model with explicit inputs.
+Use the `wavespeed` CLI to run WaveSpeed image, video, audio, and 3D models. Every generation uses the same flow: search the live catalog, inspect the model schema, then run the model with explicit inputs.
 
 ## Before Running
 
@@ -35,6 +35,9 @@ If the user is not signed in, ask them to run `wavespeed login`. Do not ask the 
 # 1. Search the live catalog.
 wavespeed models "nano banana"
 wavespeed models --type image-to-video
+wavespeed models --type text-to-video
+wavespeed models --type text-to-audio
+wavespeed models --type text-to-3d
 
 # 2. Inspect dynamic inputs for the selected model.
 wavespeed run google/nano-banana-2/text-to-image -h

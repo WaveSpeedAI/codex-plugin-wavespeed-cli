@@ -15,7 +15,9 @@
     "ai-generation",
     "cli",
     "image-generation",
-    "video-generation"
+    "video-generation",
+    "audio-generation",
+    "3d-generation"
   ],
   "skills": "./skills/",
   "hooks": "./hooks.json",
@@ -23,12 +25,15 @@
   "apps": "./.app.json",
   "interface": {
     "displayName": "WaveSpeed CLI",
-    "shortDescription": "Run WaveSpeed media generation models from Codex.",
+    "shortDescription": "Run WaveSpeed image, video, audio, and 3D models from Codex.",
     "longDescription": "Adds a Codex skill for using the WaveSpeed CLI to search the live model catalog, inspect model schemas, upload inputs, run image/video/audio/3D generation, and retrieve JSON outputs or downloaded files.",
     "developerName": "WaveSpeedAI",
     "category": "AI",
     "capabilities": [
-      "Generate media",
+      "Generate images",
+      "Generate videos",
+      "Generate audio",
+      "Generate 3D assets",
       "Run CLI commands",
       "Upload files",
       "Download outputs"
@@ -39,7 +44,7 @@
     "defaultPrompt": [
       "Generate an image with WaveSpeed.",
       "Find a WaveSpeed video model.",
-      "Upload this asset and animate it."
+      "Generate audio with WaveSpeed."
     ],
     "brandColor": "#7C5CFF",
     "composerIcon": "./assets/icon.png",
