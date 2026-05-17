@@ -9,10 +9,16 @@ The plugin teaches Codex how to use the `wavespeed` command line tool to search 
 Add this repository as a Codex plugin marketplace:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref main
+codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.0
 ```
 
 Then open Codex and install **WaveSpeed CLI** from `/plugins`.
+
+To track the latest version instead of a pinned release:
+
+```bash
+codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref main
+```
 
 ## Requirements
 
@@ -28,6 +34,14 @@ The plugin includes helper scripts:
 ```
 
 Use `wavespeed login` for local auth, or set `WAVESPEED_API_KEY` in the shell environment for CI and one-off runs.
+
+Quick setup:
+
+```bash
+codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.0
+npm install -g @wavespeed/cli
+wavespeed login
+```
 
 ## Layout
 

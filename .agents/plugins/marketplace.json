@@ -1,7 +1,7 @@
 {
-  "name": "wavespeed-local",
+  "name": "wavespeed-ai",
   "interface": {
-    "displayName": "WaveSpeed Local"
+    "displayName": "WaveSpeedAI"
   },
   "plugins": [
     {
