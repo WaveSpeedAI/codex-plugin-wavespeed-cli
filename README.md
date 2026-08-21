@@ -60,3 +60,8 @@ wavespeed models --type text-to-video
 wavespeed models --type text-to-audio
 wavespeed run google/nano-banana-2/text-to-image -h
 ```
+
+---
+
+**[WaveSpeed AI](https://wavespeed.ai/)** — AI image & video generation platform.
+Try it in the browser: **[Image generator](https://wavespeed.ai/image-generator)** · **[Video generator](https://wavespeed.ai/video-generator)**
