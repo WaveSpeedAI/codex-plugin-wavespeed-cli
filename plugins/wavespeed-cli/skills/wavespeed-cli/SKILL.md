@@ -7,6 +7,8 @@ description: Generate, edit, animate, upscale, or transform AI media using the W
 
 Use the `wavespeed` CLI to run WaveSpeed image, video, audio, and 3D models. Every generation uses the same flow: search the live catalog, inspect the model schema, then run the model with explicit inputs.
 
+This plugin also starts the WaveSpeed MCP server. Its tools map one-to-one onto the CLI commands below: `search_models` = `wavespeed models`, `get_model_schema` = `wavespeed schema`, `get_price` = `wavespeed price`, `upload_file` = `wavespeed upload`, `run_model` = `wavespeed run`, `get_prediction` = `wavespeed show`, `get_balance` = `wavespeed balance`. Prefer the MCP tools for single generations; use the CLI when it is installed and the user wants batch or scripted runs. Both share the same login.
+
 ## Before Running
 
 Check whether the CLI is available:
