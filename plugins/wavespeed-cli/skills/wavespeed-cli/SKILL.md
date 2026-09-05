@@ -58,8 +58,8 @@ wavespeed run google/nano-banana-2/text-to-image \
 | --- | --- |
 | Text to image | `google/nano-banana-2/text-to-image` |
 | Image edit | `google/nano-banana-2/edit` |
-| Text to video | `bytedance/seedance-2.0/text-to-video` |
-| Image to video | `bytedance/seedance-2.0/image-to-video` |
+| Text to video | `wavespeed-ai/minimax-h3/text-to-video` (cheap open-weights default; `bytedance/seedance-2.5/text-to-video` for the highest quality) |
+| Image to video | `wavespeed-ai/minimax-h3/image-to-video` (`bytedance/seedance-2.5/image-to-video` for the highest quality) |
 
 These are defaults, not a fixed list. Browse alternatives with `wavespeed models <query>` and inspect each selected model before running it.
 
