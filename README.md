@@ -4,7 +4,7 @@ A [Codex](https://developers.openai.com/codex) plugin that lets the agent genera
 
 It bundles two things:
 
-- **MCP server** — [`@wavespeed/mcp`](https://github.com/WaveSpeedAI/mcp-server), started on demand with `npx`. Tools: `search_models`, `get_model_schema`, `get_price`, `upload_file`, `run_model`, `get_prediction`, `get_balance`.
+- **MCP server** — [`@wavespeed/mcp`](https://github.com/WaveSpeedAI/mcp-server), started on demand with `npx`. Tools: `list_models`, `get_model_schema`, `get_price`, `upload_file`, `run_model`, `generate_image`, `edit_image`, `generate_video`, `edit_video`, `extend_video`, `get_prediction`, `get_balance`.
 - **Skill** — the find → inspect → run workflow on the open-source [`@wavespeed/cli`](https://github.com/WaveSpeedAI/wavespeed-cli): search the live catalog, read any model's input schema, run it, upload local files with the `@path` marker, and quote prices before spending credits.
 
 ## Install
@@ -42,7 +42,7 @@ Helper scripts, if you prefer the CLI path:
 - *"Replace the background of ./product.png with a sunlit kitchen."*
 - *"How much would a 10-second 1080p video cost before you run it?"*
 
-Recommended starting models: `bytedance/seedream-v5.0-pro` for images, `wavespeed-ai/minimax-h3/*` for video (cheap, open-weights, native audio), `bytedance/seedance-2.5/*` when you need the highest video quality. The agent browses everything else with `search_models` or `wavespeed models`.
+Recommended starting models: `bytedance/seedream-v5.0-pro` for images, `wavespeed-ai/minimax-h3/*` for video (cheap, open-weights, native audio), `bytedance/seedance-2.5/*` when you need the highest video quality. The agent browses everything else with `list_models` or `wavespeed models`.
 
 ## Skill only, no plugin
 
