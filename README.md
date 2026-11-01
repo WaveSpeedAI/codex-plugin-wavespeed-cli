@@ -42,7 +42,7 @@ Helper scripts, if you prefer the CLI path:
 - *"Replace the background of ./product.png with a sunlit kitchen."*
 - *"How much would a 10-second 1080p video cost before you run it?"*
 
-Recommended starting models: `bytedance/seedream-v5.0-pro` for images, `wavespeed-ai/minimax-h3/*` for video (cheap, open-weights, native audio), `bytedance/seedance-2.5/*` when you need the highest video quality. The agent browses everything else with `list_models` or `wavespeed models`.
+Recommended starting models: Seedream 5 Pro for images and Seedance 2.5 for video (the defaults of `wavespeed generate|edit|extend` and of the MCP `generate_image` / `generate_video` tools), with GPT Image 2.5, Nano Banana 2.1, Kling 4.0, Wan 3.0 and MiniMax H3 (cheap, native audio, 768p) as alternatives. The agent browses everything else with `list_models` or `wavespeed models`.
 
 ## Skill only, no plugin
 
