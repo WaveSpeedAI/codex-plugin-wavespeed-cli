@@ -18,7 +18,7 @@ codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli
 Pin a release instead of tracking `main`:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.2
+codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.3
 ```
 
 Or, with the community CLI: `npx codex-marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --plugins`.
