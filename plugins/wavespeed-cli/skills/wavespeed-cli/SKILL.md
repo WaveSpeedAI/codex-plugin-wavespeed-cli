@@ -1,35 +1,16 @@
 ---
 name: wavespeed-cli
-description: Generate, edit, animate, upscale, or transform AI media using the WaveSpeed CLI from Codex. Use when the user asks to create image, video, audio, 3D, TTS, marketing creatives, or to inspect/run WaveSpeed models.
+description: Generate or edit AI media (image, video, audio, 3D) on WaveSpeed, through the WaveSpeed MCP tools when they are connected or the wavespeed CLI on the user's machine. Use whenever the user asks to create, edit, animate, extend, upscale, or transform an image or video, generate audio/TTS/music or 3D, or produce marketing creatives.
 ---
 
-# WaveSpeed CLI
+# WaveSpeed
 
-Use the `wavespeed` CLI to run WaveSpeed image, video, audio, and 3D models: the shortcuts for plain images and videos, and the generic run for every other model.
+WaveSpeed runs every model on its platform. There are two ways in, and they do the same things:
 
-This plugin also starts the WaveSpeed MCP server. Its tools map one-to-one onto the CLI commands below: `list_models` = `wavespeed models`, `get_model_schema` = `wavespeed schema`, `get_price` = `wavespeed price`, `upload_file` = `wavespeed upload`, `run_model` = `wavespeed run`, `generate_image` / `edit_image` / `generate_video` / `edit_video` / `extend_video` = `wavespeed generate|edit|extend`, `get_prediction` = `wavespeed show`, `get_balance` = `wavespeed balance`. Prefer the MCP tools for single generations; use the CLI when it is installed and the user wants batch or scripted runs. Both share the same login.
+- **MCP tools** (`generate_image`, `generate_video`, …): use them when the WaveSpeed MCP server is connected. The hosted server cannot read local files: pass public URLs, or use the CLI for files on disk.
+- **The `wavespeed` CLI**: use it when it is installed, for local files (`@./path`), batches and scripts.
 
-## Before Running
-
-Check whether the CLI is available:
-
-```bash
-wavespeed --version
-```
-
-If it is missing, run this plugin helper:
-
-```bash
-./plugins/wavespeed-cli/scripts/install-wavespeed-cli.sh
-```
-
-Check auth before generation:
-
-```bash
-wavespeed status
-```
-
-If the user is not signed in, ask them to run `wavespeed login`. Do not ask the user to paste an API key into chat. For CI or one-off shells, `WAVESPEED_API_KEY` may be set in the environment.
+For plain image and video work, use the shortcuts. For anything else (audio, 3D, upscaling, a specific endpoint, exact parameters), use the generic run.
 
 ## Images and videos: the shortcuts
 
@@ -96,6 +77,11 @@ If `wavespeed.json` exists (created by `wavespeed init`):
 - **`defaultModel`** lets `wavespeed run -p "…"` (no model arg) work.
 - **Aliases** are named shortcuts that bundle model + default inputs. Run `wavespeed aliases` to see them; `wavespeed run <alias> -h` shows the resolved schema. CLI `-i k=v` overrides alias defaults.
 
+## Auth
+
+- CLI: `wavespeed status` shows whether the user is signed in. If not, ask them to run `wavespeed login` (opens https://wavespeed.ai/accesskey).
+- MCP: if the tools ask for authorization, the user approves the connection once in the Codex connection prompt.
+- **Never** ask the user to paste an API key into the chat.
 
 ## Cost and credits
 

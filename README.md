@@ -4,7 +4,7 @@ A [Codex](https://developers.openai.com/codex) plugin that lets the agent genera
 
 It bundles two things:
 
-- **MCP server** — [`@wavespeed/mcp`](https://github.com/WaveSpeedAI/mcp-server), started on demand with `npx`. Tools: `list_models`, `get_model_schema`, `get_price`, `upload_file`, `run_model`, `generate_image`, `edit_image`, `generate_video`, `edit_video`, `extend_video`, `get_prediction`, `get_balance`.
+- **Hosted MCP server** — `https://api.wavespeed.ai/mcp`, authorized once in the browser. Generate, edit and extend images and videos, run any model, inspect schemas, and check prices and balance. The hosted server cannot read files on your computer; pass public URLs or use the CLI for local files.
 - **Skill** — the find → inspect → run workflow on the open-source [`@wavespeed/cli`](https://github.com/WaveSpeedAI/wavespeed-cli): search the live catalog, read any model's input schema, run it, upload local files with the `@path` marker, and quote prices before spending credits.
 
 ## Install
@@ -18,15 +18,15 @@ codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli
 Pin a release instead of tracking `main`:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.3
+codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.4
 ```
 
 Or, with the community CLI: `npx codex-marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --plugins`.
 
 ## Requirements
 
-- Node.js ≥ 18 (`npx` runs the MCP server, nothing else to install)
-- A WaveSpeed account. Either set `WAVESPEED_API_KEY`, or install the CLI (`npm install -g @wavespeed/cli`) and run `wavespeed login` once. One login covers both the MCP server and the CLI. Keys live at [wavespeed.ai/accesskey](https://wavespeed.ai/accesskey).
+- A WaveSpeed account. Approve the hosted MCP connection in the browser when Codex prompts you. You can revoke the resulting `MCP · …` API key on [API Keys](https://wavespeed.ai/accesskey).
+- For local files, batches or scripts, install the CLI (`npm install -g @wavespeed/cli`) and run `wavespeed login`. CLI authentication is separate from the hosted MCP connection. The npm install path requires Node.js ≥ 18.
 
 Helper scripts, if you prefer the CLI path:
 
