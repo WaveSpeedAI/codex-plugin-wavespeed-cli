@@ -1,6 +1,6 @@
 {
   "name": "wavespeed-cli",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Generate and edit AI media (image, video, audio, 3D) on WaveSpeed through its hosted MCP server and a CLI skill for local files, batches, live catalog search and price quotes.",
   "author": {
     "name": "WaveSpeedAI",
