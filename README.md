@@ -18,7 +18,7 @@ codex plugin marketplace add WaveSpeedAI/codex-plugins
 Pin a release instead of tracking `main`:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugins --ref v0.1.5
+codex plugin marketplace add WaveSpeedAI/codex-plugins --ref v0.1.6
 ```
 
 Or, with the community CLI: `npx codex-marketplace add WaveSpeedAI/codex-plugins --plugins`.
@@ -42,7 +42,7 @@ Helper scripts, if you prefer the CLI path:
 - *"Replace the background of ./product.png with a sunlit kitchen."*
 - *"How much would a 10-second 1080p video cost before you run it?"*
 
-Recommended starting models: Seedream 5 Pro for images and Seedance 2.5 for video (the defaults of `wavespeed generate|edit|extend` and of the MCP `generate_image` / `generate_video` tools), with GPT Image 2.5, Nano Banana 2.1, Kling 4.0, Wan 3.0 and MiniMax H3 (cheap, native audio, 768p) as alternatives. The agent browses everything else with `list_models` or `wavespeed models`.
+Recommended starting models: Seedream 5 Pro for images and Seedance 2.5 for video (the defaults of `wavespeed generate|edit|extend` and of the MCP `generate_image` / `generate_video` tools), with GPT Image 2.6, GPT Image 2.5, Nano Banana 2.1, Kling 4.0, Wan 3.0 and MiniMax H3 (cheap, native audio, 768p) as alternatives. The agent browses everything else with `list_models` or `wavespeed models`.
 
 ## Skill only, no plugin
 
@@ -69,6 +69,8 @@ plugins/wavespeed-cli/scripts/
 - Kimi Code CLI: [WaveSpeedAI/wavespeed-kimi-plugin](https://github.com/WaveSpeedAI/wavespeed-kimi-plugin)
 - Gemini CLI: [WaveSpeedAI/wavespeed-gemini-extension](https://github.com/WaveSpeedAI/wavespeed-gemini-extension)
 - DeepSeek Harness: [WaveSpeedAI/wavespeed-dsh-skill](https://github.com/WaveSpeedAI/wavespeed-dsh-skill)
+- OpenCode: [WaveSpeedAI/wavespeed-opencode](https://github.com/WaveSpeedAI/wavespeed-opencode)
+- Other agents (Agent Skills format): [WaveSpeedAI/agent-skills](https://github.com/WaveSpeedAI/agent-skills)
 
 ## Security
 
