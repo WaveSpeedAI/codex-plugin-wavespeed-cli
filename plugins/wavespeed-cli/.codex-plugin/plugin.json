@@ -7,8 +7,8 @@
     "email": "support@wavespeed.ai",
     "url": "https://wavespeed.ai"
   },
-  "homepage": "https://github.com/WaveSpeedAI/codex-plugin-wavespeed-cli",
-  "repository": "https://github.com/WaveSpeedAI/codex-plugin-wavespeed-cli",
+  "homepage": "https://github.com/WaveSpeedAI/codex-plugins",
+  "repository": "https://github.com/WaveSpeedAI/codex-plugins",
   "license": "MIT",
   "keywords": [
     "wavespeed",

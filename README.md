@@ -12,16 +12,16 @@ It bundles two things:
 Add this repository as a plugin marketplace, then install **WaveSpeed** from `/plugins`:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli
+codex plugin marketplace add WaveSpeedAI/codex-plugins
 ```
 
 Pin a release instead of tracking `main`:
 
 ```bash
-codex plugin marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --ref v0.1.4
+codex plugin marketplace add WaveSpeedAI/codex-plugins --ref v0.1.4
 ```
 
-Or, with the community CLI: `npx codex-marketplace add WaveSpeedAI/codex-plugin-wavespeed-cli --plugins`.
+Or, with the community CLI: `npx codex-marketplace add WaveSpeedAI/codex-plugins --plugins`.
 
 ## Requirements
 
